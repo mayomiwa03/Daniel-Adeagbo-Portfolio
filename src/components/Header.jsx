@@ -9,9 +9,9 @@ const HeaderSec = styled.div`
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  top: 1rem;
+  top: 0;
   border-bottom: 1px solid #444;
-  padding: 0 1rem;
+  padding: 0 4rem;
 
   h1 {
     font-family: "Sansation", sans-serif;
@@ -19,6 +19,9 @@ const HeaderSec = styled.div`
   }
   @media (min-width: 260px) and (max-width: 500px) {
     padding: 0 0.5rem;
+    background: rgba(17, 17, 17, 0.6); /* semi-transparent dark tint */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     h1 {
       font-size: 1.8rem;
     }

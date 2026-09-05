@@ -19,12 +19,14 @@ const ProjectSec = styled.div`
     margin-bottom: 2rem;
     h3 {
       font-size: 1.2rem;
+      padding-left: 4rem;
     }
   }
   .gridSec {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0 4rem;
+    gap: 4rem;
     .gridcard {
       display: flex;
       flex-direction: column;
@@ -32,13 +34,31 @@ const ProjectSec = styled.div`
 
       img {
         width: 100%;
-        height: 10rem;
+        height: 15rem;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
       }
       p {
         font-size: 1rem;
         color: #fff;
+      }
+    }
+  }
+  @media (min-width: 260px) and (max-width: 500px) {
+    .title {
+      h3 {
+        padding-left: 0;
+      }
+    }
+    .gridSec {
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      padding: 0;
+
+      .gridcard {
+        img {
+          height: 10rem;
+        }
       }
     }
   }
