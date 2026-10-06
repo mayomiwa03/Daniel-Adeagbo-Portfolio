@@ -15,6 +15,7 @@ const ProjectSec = styled.div`
   margin-top: 10rem;
   background-color: #000;
   color: #fff;
+  padding: 0 1rem;
   .title {
     margin-bottom: 2rem;
     h3 {
@@ -52,8 +53,9 @@ const ProjectSec = styled.div`
     }
     .gridSec {
       grid-template-columns: 1fr 1fr;
-      gap: 1rem;
+      gap: 2rem;
       padding: 0;
+      margin-bottom: 3rem;
 
       .gridcard {
         img {

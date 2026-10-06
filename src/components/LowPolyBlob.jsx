@@ -16,7 +16,7 @@ function LowPolyBlob({ position = [3, 5, 2], scale = 1 }) {
     <mesh ref={meshRef} position={position} scale={scale}>
       <icosahedronGeometry args={[2, 2]} />
 
-      <meshBasicMaterial color="#333333" wireframe transparent opacity={0.7} />
+      <meshBasicMaterial color="#444" wireframe transparent opacity={0.7} />
     </mesh>
   );
 }
